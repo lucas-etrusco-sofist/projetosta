@@ -1,0 +1,13 @@
+{
+    "chromeWebSecurity": false,
+    "env": {
+
+        "senha":"secret_sauce",
+        "usuarioValid":"standard_user",
+        "usuarioBloq":"locked_out_user",
+        "usuarioProblem":"problem_user",
+        "defaultCommandTimeout": 10000
+
+    }
+
+}
