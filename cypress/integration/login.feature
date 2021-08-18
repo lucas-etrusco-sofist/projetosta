@@ -11,7 +11,7 @@ Feature: Login
     Scenario: Login com usuario bloqueado
         Given Acessei a pagina de login do site
         When insiro nome e senha de um usuario bloqueado
-        Then É exibido uma mensagem de erro
+        Then É exibido uma mensagem de erro de usuario bloqueado
 
     Scenario: Login com usuario problematico
         Given Acessei a pagina de login do site

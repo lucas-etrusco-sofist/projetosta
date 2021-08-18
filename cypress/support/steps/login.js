@@ -32,7 +32,7 @@ When(/^insiro nome e senha de um usuario bloqueado$/, () => {
 });
 
 
-Then(/^É exibido uma mensagem de erro$/, () => {
+Then(/^É exibido uma mensagem de erro de usuario bloqueado$/, () => {
 	Login.verificaUsuarioBloqueado()
 });
 
