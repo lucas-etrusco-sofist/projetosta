@@ -4,14 +4,14 @@ class Produto {
      verificaCompraSucesso(){
 
         cy.get('[class="title"]').should('contain', 'Checkout: Complete!')
-
+        cy.screenshot()
      }
 
 
      verificaCompraSucessoXpath(){
 
         cy.get('//*[.title]').should('contain', 'Checkout: Complete!')
-
+        cy.screenshot()
      }
 
 

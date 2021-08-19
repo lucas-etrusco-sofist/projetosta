@@ -18,7 +18,7 @@ class Login {
 
         cy.get('[id="user-name"]').type(`${Cypress.env('usuarioValid')}`)
         cy.get('[id="password"]').type(`${Cypress.env('senha')}`)
-
+ 
 
      }
 
@@ -75,32 +75,37 @@ class Login {
      verificaLoginValido(){
 
         cy.get('[class="title"]').should('contain','Products')
-        
+        cy.screenshot()
      }
 
      verificaUsuarioBloqueado(){
 
         cy.get('[data-test="error"]').should('contain', 'Epic sadface: Sorry, this user has been locked out.')
+        cy.screenshot()
      }
 
      verificaUsuarioProblematico(){
 
         cy.get('[class="title"]').should('contain', 'Products')
+        cy.screenshot()
      }
 
      verificaUsuarioVazioSenhaValida(){
 
         cy.get('[data-test=error]').should('contain', 'Epic sadface: Username is required')
+        cy.screenshot()
      }
 
      verificaUsuarioValidoSenhaVazio(){
 
         cy.get('[data-test=error]').should('contain', 'Epic sadface: Password is required')
+        cy.screenshot()
      }
 
      verificaUsuarioValidoSenhaVazio(){
 
         cy.get('[data-test=error]').should('contain', 'Epic sadface: Username and password do not match any user in this service')
+        cy.screenshot()
      }
 
 
