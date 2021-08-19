@@ -10,7 +10,7 @@ Given(/^Realizei login no site$/, () => {
 });
 
 When(/^adiciono produtos ao carrinho e finalizo a compra$/, () => {
-	Compra.adicionarUmProdutoAoCarrinhoFecharoPedido();
+	Compra.adicionarUmProdutoAoCarrinhoFecharoPedidoXpath();
 });
 
 Then(/^É exibido uma mensagem de sucesso$/, () => {
