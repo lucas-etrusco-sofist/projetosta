@@ -1,5 +1,6 @@
 {
     "chromeWebSecurity": false,
+    "projectId": "a2dro4",
     "env": {
 
         "senha":"secret_sauce",
